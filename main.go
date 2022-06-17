@@ -6,6 +6,7 @@ import (
 	"gowebcli/dao/mysql"
 	"gowebcli/dao/redis"
 	"gowebcli/logger"
+	"gowebcli/pkg/snowflake"
 	"gowebcli/routes"
 	"gowebcli/settings"
 	"log"
@@ -28,6 +29,7 @@ func main() {
 	}
 	fmt.Println(settings.Conf)
 	fmt.Println(settings.Conf.LogConfig == nil)
+
 	// 2. 初始化日志
 	if err := logger.Init(settings.Conf.LogConfig); err != nil {
 		fmt.Printf("init logger failed, err:%v\n", err)
@@ -35,20 +37,30 @@ func main() {
 	}
 	defer zap.L().Sync()
 	zap.L().Debug("logger init success...")
+
 	// 3. 初始化MySQL连接
 	if err := mysql.Init(settings.Conf.MySQLConfig); err != nil {
 		fmt.Printf("init mysql failed, err:%v\n", err)
 		return
 	}
 	defer mysql.Close()
+
 	// 4. 初始化Redis连接
 	if err := redis.Init(settings.Conf.RedisConfig); err != nil {
 		fmt.Printf("init redis failed, err:%v\n", err)
 		return
 	}
 	defer redis.Close()
+
+	// 添加 snowflake
+	if err := snowflake.Init(settings.Conf.MachineID); err != nil {
+		fmt.Printf("init snowflake failed, err:%v\n", err)
+		return
+	}
+
 	// 5. 注册路由
 	r := routes.Setup(settings.Conf.Mode)
+
 	// 6. 启动服务（优雅关机）
 	fmt.Println(settings.Conf.Port)
 	srv := &http.Server{
@@ -72,6 +84,7 @@ func main() {
 	signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM) // 此处不会阻塞
 	<-quit                                               // 阻塞在此，当接收到上述两种信号时才会往下执行
 	zap.L().Info("Shutdown Server ...")
+
 	// 创建一个5秒超时的context
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()

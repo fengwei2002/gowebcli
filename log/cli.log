@@ -1,0 +1,6 @@
+{"level":"DEBUG","time":"2022-06-17T14:54:25.522+0800","caller":"gowebcli/main.go:38","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-17T14:54:45.007+0800","caller":"gowebcli/main.go:79","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-17T14:54:45.018+0800","caller":"gowebcli/main.go:89","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-17T15:29:15.991+0800","caller":"backend/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-17T15:29:19.242+0800","caller":"backend/main.go:86","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-17T15:29:19.253+0800","caller":"backend/main.go:96","msg":"Server exiting"}
