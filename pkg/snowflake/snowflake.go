@@ -28,8 +28,8 @@ func Init(machineId uint16) (err error) {
 	return
 }
 
-// GetID 返回生成的id值
-func GetID() (id uint64, err error) { // 拿到 sonyFlake 节点生成id值
+// GenID 返回生成的id值
+func GenID() (id uint64, err error) { // 拿到 sonyFlake 节点生成id值
 	if sonyFlake == nil {
 		err = fmt.Errorf("snoy flake not inited")
 		return
@@ -44,6 +44,6 @@ func GetID() (id uint64, err error) { // 拿到 sonyFlake 节点生成id值
 // 		fmt.Printf("Init failed,err:%v\n", err)
 // 		return
 // 	}
-// 	id, _ := GetID()
+// 	id, _ := GenID()
 // 	fmt.Println(id)
 // }

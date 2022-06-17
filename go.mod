@@ -1,4 +1,4 @@
-module gowebcli
+module reddit
 
 go 1.18
 

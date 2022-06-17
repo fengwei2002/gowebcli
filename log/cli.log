@@ -4,3 +4,54 @@
 {"level":"DEBUG","time":"2022-06-17T15:29:15.991+0800","caller":"backend/main.go:39","msg":"logger init success..."}
 {"level":"INFO","time":"2022-06-17T15:29:19.242+0800","caller":"backend/main.go:86","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2022-06-17T15:29:19.253+0800","caller":"backend/main.go:96","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-17T16:19:52.551+0800","caller":"backend/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-17T16:19:56.430+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":404,"method":"GET","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-17T16:20:34.802+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":404,"method":"GET","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-17T16:20:59.266+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":404,"method":"GET","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-17T16:21:41.172+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":404,"method":"GET","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-17T16:21:48.166+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":404,"method":"GET","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-17T17:00:15.213+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0024149}
+{"level":"ERROR","time":"2022-06-17T17:00:20.157+0800","caller":"controller/user.go:15","msg":"ShouldBindJSON failed: ","error":"invalid character '}' looking for beginning of object key string"}
+{"level":"INFO","time":"2022-06-17T17:00:20.158+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0011129}
+{"level":"INFO","time":"2022-06-17T18:50:01.810+0800","caller":"backend/main.go:86","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-17T18:50:01.815+0800","caller":"backend/main.go:96","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-17T19:09:03.254+0800","caller":"backend/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-17T19:09:39.706+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":404,"method":"GET","path":"/sign_up","query":"","ip":"::1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36","errors":"","cost":0}
+{"level":"ERROR","time":"2022-06-17T19:10:29.189+0800","caller":"controller/user.go:15","msg":"ShouldBindJSON failed: ","error":"invalid character '}' looking for beginning of object key string"}
+{"level":"INFO","time":"2022-06-17T19:10:29.190+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0024245}
+{"level":"INFO","time":"2022-06-17T19:11:45.893+0800","caller":"backend/main.go:86","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-17T19:11:45.896+0800","caller":"backend/main.go:96","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-17T19:11:51.860+0800","caller":"backend/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-06-17T19:11:54.623+0800","caller":"controller/user.go:15","msg":"ShouldBindJSON failed: ","error":"invalid character '}' looking for beginning of object key string"}
+{"level":"INFO","time":"2022-06-17T19:11:54.624+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0009997}
+{"level":"ERROR","time":"2022-06-17T19:12:07.447+0800","caller":"controller/user.go:15","msg":"ShouldBindJSON failed: ","error":"Key: 'ParamSignUp.RePassword' Error:Field validation for 'RePassword' failed on the 'required' tag"}
+{"level":"INFO","time":"2022-06-17T19:12:07.447+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-17T19:25:26.937+0800","caller":"backend/main.go:86","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-17T19:25:26.944+0800","caller":"backend/main.go:96","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-17T19:25:52.672+0800","caller":"backend/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-06-17T19:25:59.348+0800","caller":"controller/user.go:15","msg":"ShouldBindJSON failed: ","error":"Key: 'ParamSignUp.RePassword' Error:Field validation for 'RePassword' failed on the 'required' tag"}
+{"level":"INFO","time":"2022-06-17T19:25:59.348+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0009974}
+{"level":"INFO","time":"2022-06-17T19:29:10.459+0800","caller":"backend/main.go:92","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-17T19:29:10.481+0800","caller":"backend/main.go:102","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-17T19:29:17.683+0800","caller":"backend/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-06-17T19:29:21.732+0800","caller":"controller/user.go:15","msg":"ShouldBindJSON failed: ","error":"Key: 'ParamSignUp.RePassword' Error:Field validation for 'RePassword' failed on the 'required' tag"}
+{"level":"INFO","time":"2022-06-17T19:29:21.732+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0008882}
+{"level":"ERROR","time":"2022-06-17T19:29:32.814+0800","caller":"controller/user.go:15","msg":"ShouldBindJSON failed: ","error":"invalid character '\"' after object key:value pair"}
+{"level":"INFO","time":"2022-06-17T19:29:32.814+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0004895}
+{"level":"INFO","time":"2022-06-17T19:29:39.407+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0}
+{"level":"ERROR","time":"2022-06-17T19:29:44.540+0800","caller":"controller/user.go:15","msg":"ShouldBindJSON failed: ","error":"Key: 'ParamSignUp.RePassword' Error:Field validation for 'RePassword' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2022-06-17T19:29:44.540+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0007419}
+{"level":"INFO","time":"2022-06-17T20:13:43.889+0800","caller":"backend/main.go:92","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-17T20:13:43.893+0800","caller":"backend/main.go:102","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-17T20:14:14.856+0800","caller":"backend/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-06-17T20:14:37.035+0800","caller":"controller/user.go:16","msg":"ShouldBindJSON failed: ","error":"Key: 'ParamSignUp.RePassword' Error:Field validation for 'RePassword' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2022-06-17T20:14:37.035+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0005342}
+{"level":"INFO","time":"2022-06-17T20:14:41.949+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0127216}
+{"level":"INFO","time":"2022-06-17T20:15:34.203+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0006308}
+{"level":"INFO","time":"2022-06-17T20:16:33.522+0800","caller":"backend/main.go:92","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-17T20:16:33.529+0800","caller":"backend/main.go:102","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-17T20:16:49.466+0800","caller":"backend/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-17T20:16:52.710+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0753341}
+{"level":"INFO","time":"2022-06-17T20:17:04.841+0800","caller":"logger/logger.go:70","msg":"/sign_up","status":200,"method":"POST","path":"/sign_up","query":"","ip":"::1","user-agent":"PostmanRuntime/7.29.0","errors":"","cost":0.0021156}
+{"level":"INFO","time":"2022-06-17T20:17:15.585+0800","caller":"backend/main.go:92","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-17T20:17:15.602+0800","caller":"backend/main.go:102","msg":"Server exiting"}
