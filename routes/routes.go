@@ -2,18 +2,21 @@ package routes
 
 import (
 	"gowebcli/logger"
+	"gowebcli/settings"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
 )
 
-func SetUp() *gin.Engine {
+func Setup(mode string) *gin.Engine {
+	if mode == gin.ReleaseMode {
+		gin.SetMode(gin.ReleaseMode)
+	}
 	r := gin.New()
 	r.Use(logger.GinLogger(), logger.GinRecovery(true))
 
-	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hello world")
+	r.GET("/version", func(c *gin.Context) {
+		c.String(http.StatusOK, settings.Conf.Version)
 	})
-
 	return r
 }
